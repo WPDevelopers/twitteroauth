@@ -1,5 +1,5 @@
 {
-  "name": "abraham/twitteroauth",
+  "name": "wpdevelopers/twitteroauth",
   "type": "library",
   "description": "The most popular PHP library for use with the Twitter OAuth REST API.",
   "keywords": [
@@ -28,11 +28,15 @@
   "repositories": [
     {
       "type": "git",
+      "url": "https://github.com/php-vcr/php-vcr"
+    },
+    {
+      "type": "git",
       "url": "https://github.com/abraham/phpunit-testlistener-vcr"
     }
   ],
   "require": {
-    "php": "^8.0 || ^8.1",
+    "php": "^7.2 || ^8.0 || ^8.1",
     "ext-curl": "*",
     "composer/ca-bundle": "^1.2"
   },
@@ -48,5 +52,10 @@
     "psr-4": {
       "Abraham\\TwitterOAuth\\": "src"
     }
-  }
+  },
+	"config": {
+		"platform": {
+			"php": "7.2"
+		}
+	}
 }
